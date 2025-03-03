@@ -77,3 +77,136 @@
 2025-03-03 15:14:04,079 - mcp.automation - INFO - Command completed with return code: 2
 2025-03-03 15:14:04,080 - mcp.automation - INFO - Performing file operation: write on /path/to/your/react-app/src/App.js
 2025-03-03 15:14:04,080 - mcp.automation - ERROR - Error performing file operation 'write' on '/path/to/your/react-app/src/App.js': [Errno 13] Permission denied: '/path'
+2025-03-03 15:16:09,366 - __main__ - INFO - User interrupted the program
+2025-03-03 15:16:12,740 - mcp.environment - INFO - Python version: 3.11.3 (main, Aug 31 2024, 13:16:02) [GCC 11.4.0]
+2025-03-03 15:16:12,740 - mcp.environment - INFO - Python executable: /home/pyarakhar/mcp-test/mcp_env/bin/python
+2025-03-03 15:16:12,740 - mcp.environment - INFO - VIRTUAL_ENV is set to: /home/pyarakhar/mcp-test/mcp_env
+2025-03-03 15:16:12,740 - mcp.environment - INFO - Encodings module found successfully
+2025-03-03 15:16:12,922 - mcp.interface - INFO - LLM Interface initialized with provider: openai
+2025-03-03 15:16:12,923 - mcp.parser - INFO - Command Parser initialized
+2025-03-03 15:16:12,923 - mcp.controller - INFO - Action Controller initialized
+2025-03-03 15:16:12,923 - mcp.automation - INFO - System Automation initialized (Screen: 1920x1200)
+2025-03-03 15:16:12,923 - mcp.automation - INFO - Created output directory: /home/pyarakhar/mcp-test/mcp_output
+2025-03-03 15:16:12,923 - mcp.display - INFO - Feedback Display initialized
+2025-03-03 15:16:12,923 - __main__ - INFO - MCP Tool initialized
+2025-03-03 15:16:27,207 - __main__ - INFO - User interrupted the program
+2025-03-03 15:16:36,407 - mcp.environment - INFO - Python version: 3.11.3 (main, Aug 31 2024, 13:16:02) [GCC 11.4.0]
+2025-03-03 15:16:36,408 - mcp.environment - INFO - Python executable: /home/pyarakhar/mcp-test/mcp_env/bin/python
+2025-03-03 15:16:36,408 - mcp.environment - INFO - VIRTUAL_ENV is set to: /home/pyarakhar/mcp-test/mcp_env
+2025-03-03 15:16:36,408 - mcp.environment - INFO - Encodings module found successfully
+2025-03-03 15:16:36,588 - mcp.interface - INFO - LLM Interface initialized with provider: openai
+2025-03-03 15:16:36,588 - mcp.parser - INFO - Command Parser initialized
+2025-03-03 15:16:36,588 - mcp.controller - INFO - Action Controller initialized
+2025-03-03 15:16:36,588 - mcp.automation - INFO - System Automation initialized (Screen: 1920x1200)
+2025-03-03 15:16:36,588 - mcp.display - INFO - Feedback Display initialized
+2025-03-03 15:16:36,588 - __main__ - INFO - MCP Tool initialized
+2025-03-03 15:17:08,332 - mcp.interface - ERROR - Failed to parse JSON from LLM response: {
+    "actions": [
+        {
+            "type": "command_line",
+            "command": "cd ~/Documents/todo && touch App.js index.js",
+            "description": "Navigate to the todo folder and create App.js and index.js files for the React application."
+        },
+        {
+            "type": "file_operation",
+            "action": "write",
+            "path": "./index.js",
+            "content": "import React from 'react'; import ReactDOM from 'react-dom'; import App from './App'; ReactDOM.render(<App />, document.getElementById('root'));",
+            "description": "Write the entry point code for the React application in index.js."
+        },
+        {
+            "type": "file_operation",
+            "action": "write",
+            "path": "./App.js",
+            "content": \"\"\"import React, { useState } from 'react'; const App = () => { const [todos, setTodos] = useState([]); const [input, setInput] = useState(''); const addTodo = () => { if (input) { setTodos([...todos, input]); setInput(''); } }; return ( <div> <h1>Todo App</h1> <input value={input} onChange={(e) => setInput(e.target.value)} /> <button onClick={addTodo}>Add Todo</button> <ul>{todos.map((todo, index) => <li key={index}>{todo}</li>)}</ul> </div> ); }; export default App;\"\"",
+            "description": "Write the main Todo application code in App.js."
+        },
+        {
+            "type": "command_line",
+            "command": "npm init -y && npm install react react-dom",
+            "description": "Initialize a new npm project and install React and ReactDOM."
+        },
+        {
+            "type": "command_line",
+            "command": "npm start",
+            "description": "Start the React application."
+        }
+    ],
+    "reasoning": "To create a Todo application in the specified folder, I will first navigate to the todo directory and create the necessary files. Then, I will write the basic React application code into these files. After that, I will initialize a new npm project and install the required React libraries, followed by starting the application."
+}
+2025-03-03 15:17:08,332 - mcp.parser - INFO - Parsed 0 commands from LLM response
+2025-03-03 15:17:49,229 - mcp.parser - INFO - Parsed 0 commands from LLM response
+2025-03-03 15:18:07,065 - mcp.parser - INFO - Parsed 5 commands from LLM response
+2025-03-03 15:18:07,066 - mcp.automation - INFO - Executing command: npx create-react-app todo-app
+2025-03-03 15:19:03,686 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:19:03,689 - mcp.automation - INFO - Executing command: cd todo-app && npm install
+2025-03-03 15:19:05,532 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:19:05,533 - mcp.automation - INFO - Performing file operation: write on ./todo-app/src/Todo.js
+2025-03-03 15:19:05,534 - mcp.automation - INFO - Performing file operation: write on ./todo-app/src/App.js
+2025-03-03 15:19:05,535 - mcp.automation - INFO - Executing command: npm start
+2025-03-03 15:19:05,641 - mcp.automation - INFO - Command completed with return code: 254
+2025-03-03 15:19:49,977 - mcp.parser - INFO - Parsed 0 commands from LLM response
+2025-03-03 15:20:08,959 - mcp.parser - INFO - Parsed 2 commands from LLM response
+2025-03-03 15:20:08,959 - mcp.automation - INFO - Executing command: cd ~/Documents/todo-app
+2025-03-03 15:20:08,961 - mcp.automation - INFO - Command completed with return code: 2
+2025-03-03 15:20:08,963 - mcp.automation - INFO - Executing command: npm start
+2025-03-03 15:20:09,061 - mcp.automation - INFO - Command completed with return code: 254
+2025-03-03 15:20:37,298 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 15:20:37,299 - mcp.automation - INFO - Executing command: cd ~/mcp-test && ls
+2025-03-03 15:20:37,303 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:20:58,771 - mcp.parser - INFO - Parsed 2 commands from LLM response
+2025-03-03 15:20:58,772 - mcp.automation - INFO - Executing command: cd ~/mcp-test/todo-app
+2025-03-03 15:20:58,774 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:20:58,776 - mcp.automation - INFO - Executing command: npm start
+2025-03-03 15:20:58,872 - mcp.automation - INFO - Command completed with return code: 254
+2025-03-03 15:22:03,915 - mcp.parser - INFO - Parsed 0 commands from LLM response
+2025-03-03 15:24:34,870 - __main__ - INFO - User interrupted the program
+2025-03-03 15:24:38,797 - mcp.environment - INFO - Python version: 3.11.3 (main, Aug 31 2024, 13:16:02) [GCC 11.4.0]
+2025-03-03 15:24:38,797 - mcp.environment - INFO - Python executable: /home/pyarakhar/mcp-test/mcp_env/bin/python
+2025-03-03 15:24:38,797 - mcp.environment - INFO - VIRTUAL_ENV is set to: /home/pyarakhar/mcp-test/mcp_env
+2025-03-03 15:24:38,797 - mcp.environment - INFO - Encodings module found successfully
+2025-03-03 15:24:39,082 - mcp.interface - INFO - LLM Interface initialized with provider: openai
+2025-03-03 15:24:39,082 - mcp.parser - INFO - Command Parser initialized
+2025-03-03 15:24:39,082 - mcp.controller - INFO - Action Controller initialized
+2025-03-03 15:24:39,082 - mcp.automation - INFO - System Automation initialized (Screen: 1920x1200)
+2025-03-03 15:24:39,083 - mcp.display - INFO - Feedback Display initialized
+2025-03-03 15:24:39,083 - __main__ - INFO - MCP Tool initialized
+2025-03-03 15:25:05,028 - __main__ - INFO - User interrupted the program
+2025-03-03 15:25:13,390 - mcp.environment - INFO - Python version: 3.11.3 (main, Aug 31 2024, 13:16:02) [GCC 11.4.0]
+2025-03-03 15:25:13,390 - mcp.environment - INFO - Python executable: /home/pyarakhar/mcp-test/mcp_env/bin/python
+2025-03-03 15:25:13,390 - mcp.environment - INFO - VIRTUAL_ENV is set to: /home/pyarakhar/mcp-test/mcp_env
+2025-03-03 15:25:13,390 - mcp.environment - INFO - Encodings module found successfully
+2025-03-03 15:25:13,677 - mcp.interface - INFO - LLM Interface initialized with provider: openai
+2025-03-03 15:25:13,677 - mcp.parser - INFO - Command Parser initialized
+2025-03-03 15:25:13,677 - mcp.controller - INFO - Action Controller initialized
+2025-03-03 15:25:13,678 - mcp.automation - INFO - System Automation initialized (Screen: 1920x1200)
+2025-03-03 15:25:13,678 - mcp.display - INFO - Feedback Display initialized
+2025-03-03 15:25:13,678 - __main__ - INFO - MCP Tool initialized
+2025-03-03 15:27:05,836 - __main__ - INFO - User interrupted the program
+2025-03-03 15:27:09,477 - mcp.environment - INFO - Python version: 3.11.3 (main, Aug 31 2024, 13:16:02) [GCC 11.4.0]
+2025-03-03 15:27:09,477 - mcp.environment - INFO - Python executable: /home/pyarakhar/mcp-test/mcp_env/bin/python
+2025-03-03 15:27:09,477 - mcp.environment - INFO - VIRTUAL_ENV is set to: /home/pyarakhar/mcp-test/mcp_env
+2025-03-03 15:27:09,478 - mcp.environment - INFO - Encodings module found successfully
+2025-03-03 15:27:09,761 - mcp.interface - INFO - LLM Interface initialized with provider: openai
+2025-03-03 15:27:09,761 - mcp.parser - INFO - Command Parser initialized
+2025-03-03 15:27:09,761 - mcp.controller - INFO - Action Controller initialized
+2025-03-03 15:27:09,761 - mcp.automation - INFO - System Automation initialized (Screen: 1920x1200)
+2025-03-03 15:27:09,762 - mcp.display - INFO - Feedback Display initialized
+2025-03-03 15:27:09,762 - __main__ - INFO - MCP Tool initialized
+2025-03-03 15:27:50,341 - mcp.parser - INFO - Parsed 5 commands from LLM response
+2025-03-03 15:27:50,342 - mcp.automation - INFO - Executing command: mkdir ~/apps
+2025-03-03 15:27:50,347 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:27:50,349 - mcp.automation - INFO - Executing command: cd ~/apps && npx create-react-app todo-app
+2025-03-03 15:28:34,423 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:28:34,430 - mcp.automation - INFO - Executing command: cd ~/apps/todo-app && npm install
+2025-03-03 15:28:37,003 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:28:37,005 - mcp.automation - INFO - Performing file operation: write on ~/apps/todo-app/src/Todo.js
+2025-03-03 15:28:37,007 - mcp.automation - INFO - Performing file operation: write on ~/apps/todo-app/src/App.js
+2025-03-03 15:28:38,705 - mcp.parser - INFO - Parsed 0 commands from LLM response
+2025-03-03 15:30:12,456 - mcp.parser - INFO - Parsed 4 commands from LLM response
+2025-03-03 15:30:12,457 - mcp.automation - INFO - Executing command: code ~/apps/todo-app
+2025-03-03 15:30:12,861 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:30:12,863 - mcp.automation - INFO - Performing GUI action: click on Terminal menu in Visual Studio Code
+2025-03-03 15:30:13,374 - mcp.automation - INFO - Performing GUI action: click on New Terminal option
+2025-03-03 15:30:13,881 - mcp.automation - INFO - Executing command: npm start
+2025-03-03 15:30:14,049 - mcp.automation - INFO - Command completed with return code: 254

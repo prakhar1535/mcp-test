@@ -1,0 +1,18 @@
+{
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4",
+    "api_key": "YOUR_API_KEY_HERE",
+    "api_url": "https://api.openai.com/v1/chat/completions"
+  },
+  "safety": {
+    "confirm_dangerous_actions": true,
+    "restricted_paths": ["/etc/passwd", "/etc/shadow", "/boot", "/etc/sudoers"],
+    "restricted_commands": ["rm -rf /", "mkfs", "dd if=/dev/zero"]
+  },
+  "display": {
+    "show_screenshots": true,
+    "max_history": 10,
+    "theme": "dark"
+  }
+}
