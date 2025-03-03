@@ -1,0 +1,6 @@
+pyautogui
+rich
+requests
+pillow
+pynput
+python-xlib

@@ -1,0 +1,18 @@
+{
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "api_key": "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",
+    "api_url": "https://api.openai.com/v1/chat/completions"
+  },
+  "safety": {
+    "confirm_dangerous_actions": true,
+    "restricted_paths": ["/etc/passwd", "/etc/shadow", "/boot", "/etc/sudoers"],
+    "restricted_commands": ["rm -rf /", "mkfs", "dd if=/dev/zero"]
+  },
+  "display": {
+    "show_screenshots": true,
+    "max_history": 10,
+    "theme": "dark"
+  }
+}

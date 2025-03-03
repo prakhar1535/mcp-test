@@ -1,0 +1,79 @@
+2025-03-03 14:57:51,126 - mcp.environment - INFO - Python version: 3.11.3 (main, Aug 31 2024, 13:16:02) [GCC 11.4.0]
+2025-03-03 14:57:51,126 - mcp.environment - INFO - Python executable: /home/pyarakhar/mcp-test/mcp_env/bin/python
+2025-03-03 14:57:51,126 - mcp.environment - INFO - VIRTUAL_ENV is set to: /home/pyarakhar/mcp-test/mcp_env
+2025-03-03 14:57:51,126 - mcp.environment - INFO - Encodings module found successfully
+2025-03-03 14:57:51,347 - mcp.interface - INFO - LLM Interface initialized with provider: openai
+2025-03-03 14:57:51,347 - mcp.parser - INFO - Command Parser initialized
+2025-03-03 14:57:51,347 - mcp.controller - INFO - Action Controller initialized
+2025-03-03 14:57:51,347 - mcp.automation - INFO - System Automation initialized (Screen: 1920x1200)
+2025-03-03 14:57:51,347 - mcp.display - INFO - Feedback Display initialized
+2025-03-03 14:57:51,348 - __main__ - INFO - MCP Tool initialized
+2025-03-03 14:58:02,917 - mcp.parser - INFO - Parsed 3 commands from LLM response
+2025-03-03 14:58:02,918 - mcp.automation - INFO - Performing GUI action: click on Activities Overview
+2025-03-03 14:58:03,427 - mcp.automation - INFO - Performing GUI action: type on search bar
+2025-03-03 14:58:03,965 - mcp.automation - INFO - Performing GUI action: click on Terminal application
+2025-03-03 14:58:43,306 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 14:58:43,307 - mcp.automation - INFO - Executing command: code
+2025-03-03 14:58:44,029 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 14:59:23,801 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 14:59:23,802 - mcp.automation - INFO - Executing command: brave www.youtube.com
+2025-03-03 14:59:23,804 - mcp.automation - INFO - Command completed with return code: 127
+2025-03-03 14:59:52,734 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 14:59:52,735 - mcp.automation - INFO - Executing command: brave
+2025-03-03 14:59:52,737 - mcp.automation - INFO - Command completed with return code: 127
+2025-03-03 15:00:09,997 - mcp.parser - INFO - Parsed 3 commands from LLM response
+2025-03-03 15:00:09,998 - mcp.automation - INFO - Executing command: google-chrome
+2025-03-03 15:00:10,070 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:00:10,072 - mcp.automation - INFO - Performing GUI action: type on address bar
+2025-03-03 15:00:10,586 - mcp.automation - INFO - Performing GUI action: press on Enter key
+2025-03-03 15:00:10,586 - mcp.automation - WARNING - Press action called with no key
+2025-03-03 15:00:30,226 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 15:00:30,227 - mcp.automation - INFO - Executing command: xdg-open https://www.youtcloase.com
+2025-03-03 15:00:30,331 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:00:51,030 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 15:00:51,031 - mcp.automation - INFO - Executing command: xdg-open https://www.youtube.com
+2025-03-03 15:00:51,122 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:01:59,830 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 15:01:59,831 - mcp.automation - INFO - Executing command: xdg-open https://github.com
+2025-03-03 15:01:59,920 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:02:33,297 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 15:02:33,297 - mcp.automation - INFO - Executing command: xdg-open https://github.com
+2025-03-03 15:02:33,385 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:03:39,510 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 15:03:39,511 - mcp.automation - INFO - Executing command: xdg-open https://github.com
+2025-03-03 15:03:39,609 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:04:09,503 - mcp.parser - INFO - Parsed 2 commands from LLM response
+2025-03-03 15:04:09,504 - mcp.automation - INFO - Performing GUI action: open on web browser
+2025-03-03 15:04:09,504 - mcp.automation - WARNING - Unknown GUI action: open
+2025-03-03 15:04:09,506 - mcp.automation - INFO - Executing command: xdg-open https://github.com/prakhar1535/moodytunes
+2025-03-03 15:04:09,595 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:08:17,137 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 15:08:17,138 - mcp.automation - INFO - Executing command: mkdir ~/todo && code ~/todo
+2025-03-03 15:08:17,356 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:08:46,515 - mcp.parser - INFO - Parsed 1 commands from LLM response
+2025-03-03 15:08:46,516 - mcp.automation - INFO - Executing command: npx create-react-app ./todo
+2025-03-03 15:09:56,126 - __main__ - INFO - User interrupted the program
+2025-03-03 15:09:58,879 - mcp.environment - INFO - Python version: 3.11.3 (main, Aug 31 2024, 13:16:02) [GCC 11.4.0]
+2025-03-03 15:09:58,879 - mcp.environment - INFO - Python executable: /home/pyarakhar/mcp-test/mcp_env/bin/python
+2025-03-03 15:09:58,879 - mcp.environment - INFO - VIRTUAL_ENV is set to: /home/pyarakhar/mcp-test/mcp_env
+2025-03-03 15:09:58,879 - mcp.environment - INFO - Encodings module found successfully
+2025-03-03 15:09:59,061 - mcp.interface - INFO - LLM Interface initialized with provider: openai
+2025-03-03 15:09:59,061 - mcp.parser - INFO - Command Parser initialized
+2025-03-03 15:09:59,061 - mcp.controller - INFO - Action Controller initialized
+2025-03-03 15:09:59,061 - mcp.automation - INFO - System Automation initialized (Screen: 1920x1200)
+2025-03-03 15:09:59,061 - mcp.display - INFO - Feedback Display initialized
+2025-03-03 15:09:59,062 - __main__ - INFO - MCP Tool initialized
+2025-03-03 15:11:15,909 - mcp.parser - INFO - Parsed 4 commands from LLM response
+2025-03-03 15:11:15,910 - mcp.automation - INFO - Executing command: npx create-react-app todo
+2025-03-03 15:12:18,489 - mcp.automation - INFO - Command completed with return code: 1
+2025-03-03 15:12:18,491 - mcp.automation - INFO - Executing command: code todo
+2025-03-03 15:12:18,802 - mcp.automation - INFO - Command completed with return code: 0
+2025-03-03 15:12:18,804 - mcp.automation - INFO - Executing command: cd todo && npm start
+2025-03-03 15:12:18,805 - mcp.automation - INFO - Command completed with return code: 2
+2025-03-03 15:12:18,806 - mcp.automation - INFO - Performing GUI action: click on Visual Studio Code
+2025-03-03 15:13:02,037 - mcp.parser - INFO - Parsed 0 commands from LLM response
+2025-03-03 15:14:04,076 - mcp.parser - INFO - Parsed 2 commands from LLM response
+2025-03-03 15:14:04,077 - mcp.automation - INFO - Executing command: cd /path/to/your/react-app && code .
+2025-03-03 15:14:04,079 - mcp.automation - INFO - Command completed with return code: 2
+2025-03-03 15:14:04,080 - mcp.automation - INFO - Performing file operation: write on /path/to/your/react-app/src/App.js
+2025-03-03 15:14:04,080 - mcp.automation - ERROR - Error performing file operation 'write' on '/path/to/your/react-app/src/App.js': [Errno 13] Permission denied: '/path'

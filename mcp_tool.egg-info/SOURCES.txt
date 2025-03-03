@@ -1,0 +1,7 @@
+setup.py
+mcp_tool.egg-info/PKG-INFO
+mcp_tool.egg-info/SOURCES.txt
+mcp_tool.egg-info/dependency_links.txt
+mcp_tool.egg-info/entry_points.txt
+mcp_tool.egg-info/requires.txt
+mcp_tool.egg-info/top_level.txt
