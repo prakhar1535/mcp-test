@@ -2,7 +2,7 @@
   "llm": {
     "provider": "openai",
     "model": "gpt-4o-mini",
-    "api_key": "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",
+    "api_key": "your-openai-api-key",
     "api_url": "https://api.openai.com/v1/chat/completions"
   },
   "safety": {
